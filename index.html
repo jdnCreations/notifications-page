@@ -10,26 +10,29 @@
   <link rel="stylesheet" href="/dist/output.css">
 
 </head>
-<body class="h-screen flex items-center justify-center bg-neutralVeryLightGrayishBlue">
+<body class="h-screen flex md:items-center md:justify-center bg-neutralVeryLightGrayishBlue">
 
   <!-- PAGE CONTAINER -->
-  <div class="flex flex-col max-w-[46rem] bg-neutralWhite p-6 rounded-lg shadow-lg">
+  <div class="flex flex-col max-w-[46rem] w-screen bg-neutralWhite p-2 md:p-6 md:rounded-lg md:shadow-lg">
 
     <!-- HEADER -->
-    <header class="flex justify-between mb-4 items-center">
-      <h1 class="font-bold text-2xl flex items-center gap-3">Notifications <span id="notif-count" class="flex items-center text-[16px] font-normal bg-primaryBlue text-neutralWhite max-h-6 px-3 rounded-md">3</span></h1>
-      <button id="mark-as-read" href="#" class="text-neutralGrayishBlue hover:text-primaryBlue">Mark all as read</button>
+    <header class="flex justify-between mb-4 mt-4 md:mt-0 items-center">
+      <h1 class="font-extrabold md:text-2xl text-xl flex items-center gap-3">Notifications <span id="notif-count" class="flex items-center text-[14px] md:text-[1rem] font-normal bg-primaryBlue text-neutralWhite max-h-6 px-3 rounded-md">3</span></h1>
+      <button id="mark-as-read" href="#" class="text-neutralGrayishBlue hover:text-primaryBlue text-sm md:text-base">Mark all as read</button>
     </header>
 
     <!-- NOTIFICATIONS -->
-    <div class="flex flex-col gap-3">
-
+    <div class="flex flex-col gap-3 md:text-base text-sm">
       <div class="p-4 flex rounded-md gap-3 notif unread">
         <img class="w-10 h-10" src="./assets/images/avatar-mark-webber.webp" alt="profile picutre">
         <div class="flex flex-col">
-          <div class="flex gap-2">
-            <p class="text-neutralGrayishBlue"><span class="font-bold text-neutralVeryDarkBlue hover:text-primaryBlue cursor-pointer">Mark Webber</span> reacted to your recent post <a href="#" class="text-neutralDarkGrayishBlue hover:text-primaryBlue font-bold">My first tournament today!</a></p>
-            <span class="w-2 h-2 bg-primaryRed rounded-full self-center"></span>
+          <div>
+            <p class="text-neutralGrayishBlue">
+              <span class="font-bold text-neutralVeryDarkBlue hover:text-primaryBlue cursor-pointer">Mark Webber</span>
+              <span> reacted to your previous posts</span>
+              <span class="font-bold text-neutralDarkGrayishBlue cursor-pointer hover:text-primaryBlue">My first tournament today!</span>
+              <span class="ml-1 mb-[2px] inline-block w-2 h-2 bg-primaryRed rounded-full align-middle"></span>
+            </p>
           </div>
           <p class="text-neutralGrayishBlue">1m ago</p>
         </div>
@@ -38,9 +41,12 @@
       <div class="p-4 flex rounded-md gap-3 notif unread">
         <img class="w-10 h-10" src="./assets/images/avatar-angela-gray.webp" alt="profile picture">
         <div class="flex flex-col">
-          <div class="flex gap-2">
-            <p class="text-neutralGrayishBlue"><span class="font-bold text-neutralVeryDarkBlue hover:text-primaryBlue cursor-pointer">Angela Gray</span> followed you</p>
-            <span class="w-2 h-2 bg-primaryRed rounded-full self-center"></span>
+          <div>
+            <p class="text-neutralGrayishBlue">
+              <span class="font-bold text-neutralVeryDarkBlue hover:text-primaryBlue cursor-pointer">Angela Gray</span>
+              <span>followed you</span>
+              <span class="ml-1 mb-[2px] inline-block w-2 h-2 bg-primaryRed rounded-full align-middle"></span>
+            </p>
           </div>
           <p class="text-neutralGrayishBlue">5m ago</p>
         </div>
@@ -49,16 +55,14 @@
       <div class="p-4 flex rounded-md gap-3 notif unread">
         <img class="w-10 h-10" src="./assets/images/avatar-jacob-thompson.webp" alt="profile picture">
         <div class="flex flex-col">
-          <div class="flex gap-2">
+          <div>
             <p class="text-neutralGrayishBlue">
-              <span class="font-bold text-neutralVeryDarkBlue hover:text-primaryBlue cursor-pointer">
-                Jacob Thompson
-              </span> has joined your group
-              <a class="font-bold text-neutralDarkGrayishBlue hover:text-primaryBlue" href="#">
-                Chess Club
-              </a>
+              
+              <span class="font-bold text-neutralVeryDarkBlue hover:text-primaryBlue cursor-pointer">Jacob Thompson</span>
+              <span>has joined your group</span>
+              <span class="font-bold text-neutralDarkGrayishBlue cursor-pointer hover:text-primaryBlue">Chess Club</span>
+              <span class="ml-1 mb-[2px] inline-block w-2 h-2 bg-primaryRed rounded-full align-middle"></span>
             </p>
-            <span class="w-2 h-2 bg-primaryRed rounded-full self-center"></span>
           </div>
           <p class="text-neutralGrayishBlue">1 day ago</p>
         </div>
